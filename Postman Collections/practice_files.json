@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "3808346c-daf7-40f2-95d1-089a7509c483",
+		"name": "Postman Practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Current weather request",
+			"_postman_id": "0a8f45b7-e9d3-4a9d-87fe-2d8ee0d61c59",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"key": "appid"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=coimbatore&appid=b5714aefeab7eb94221d3c881d2e4797",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "coimbatore"
+						},
+						{
+							"key": "appid",
+							"value": "b5714aefeab7eb94221d3c881d2e4797"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basic authorization request",
+			"_postman_id": "e39e74e1-e83f-493f-8803-e06a78f41855",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "password",
+						"username": "postman"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://postman-echo.com/basic-auth"
+			},
+			"response": []
+		},
+		{
+			"name": "Copying parameters",
+			"_postman_id": "3c60a862-23fc-4ceb-88b9-2d44fc68f62e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.google.com/search?q=http%20status%20codes&oq=http%20status%20codes",
+					"protocol": "https",
+					"host": [
+						"www",
+						"google",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "http%20status%20codes"
+						},
+						{
+							"key": "oq",
+							"value": "http%20status%20codes"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Copy parameters task",
+			"_postman_id": "79bcbcc8-9b1e-46cb-927a-316edcabf5f9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.google.com/search?q=http%20status%20codes&oq=http%20status%20codes",
+					"protocol": "https",
+					"host": [
+						"www",
+						"google",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "http%20status%20codes"
+						},
+						{
+							"key": "oq",
+							"value": "http%20status%20codes"
+						}
+					]
+				},
+				"description": "Practicing copy parameters"
+			},
+			"response": []
+		},
+		{
+			"name": "API key authorization",
+			"_postman_id": "771774bd-e5b7-4ba7-9315-c6e96deb5a21",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "b5714aefeab7eb94221d3c881d2e4797",
+						"key": "appid"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=coimbatore&appid=b5714aefeab7eb94221d3c881d2e4797",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "coimbatore"
+						},
+						{
+							"key": "appid",
+							"value": "b5714aefeab7eb94221d3c881d2e4797"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API key authorization",
+			"_postman_id": "1d5ec829-9caf-49a7-83c1-9c8a6572e3c3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"in": "query",
+						"value": "b5714aefeab7eb94221d3c881d2e4797",
+						"key": "appid"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=coimbatore&appid=b5714aefeab7eb94221d3c881d2e4797",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "coimbatore"
+						},
+						{
+							"key": "appid",
+							"value": "b5714aefeab7eb94221d3c881d2e4797"
+						}
+					]
+				},
+				"description": "By using API key authorization check the weather of the given city."
+			},
+			"response": []
+		},
+		{
+			"name": "Bearer token",
+			"_postman_id": "91724a99-fa67-49b7-80ad-9acd35798c37",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Bearer token",
+			"_postman_id": "04f3cced-a406-4ea9-965f-a50c54991e7a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "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"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://api.github.com/users/repos",
+				"description": "Bearer token is a cryptic string. It will be generated by the server in response to a login request. When user making request to the protected resource, the request should have the bearer token in the Authorization headers."
+			},
+			"response": []
+		}
+	]
+}
